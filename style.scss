@@ -1,0 +1,105 @@
+@font-face {
+	font-family: DIN;
+	src: url('fonts/DINPro-Bold.otf');
+	font-weight: bold;
+    font-style: normal;
+}
+
+$grey: #7b7b7b;
+
+html {
+	font-family: Georgia, serif;
+	font-size: 18px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.header {
+	background: url(images/avatar-half.png) no-repeat;
+	background-position: right 25px;
+	padding: 100px 0px;
+
+	nav {
+		position: absolute;
+		top: 100px;
+		left: 100px;
+	}
+}
+.hamburger {
+	border-radius: 21px;
+	height: 20px;
+	background: black;
+	display: inline-block;
+	padding: 11px 0px;
+
+	i {
+		width: 42px;
+		margin: 0 auto;
+		display: inline-block;
+
+
+		span {
+			height: 4px;
+			width: 20px;
+			border-radius: 2px;
+			display: block;
+			margin: 0px auto;
+			background: white;
+		}
+		span:nth-of-type(2) {
+			margin: 4px auto;
+		}
+	}
+}
+.title {
+	max-width: 600px;
+	margin: 100px auto 100px;
+
+	h1 {
+		font-family: "DIN", sans-serif;
+		font-size: 72px;
+		text-align: center;
+		letter-spacing: 4px;
+	}
+	.intro {
+		font-size: 1.4em;
+		color: $grey;
+		line-height: 1.6em;
+		text-align: justify;
+	}
+}
+
+.content {
+	max-width: 1200px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.post {
+	figure {
+		position: relative;
+		img {
+			width: 100%;
+		}
+		figcaption {
+			display: none;
+			font-family: DIN;
+			color: white;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+		&:hover {
+			img {
+				opacity: 90%;
+			}
+			figcaption {
+				display: block;
+			}
+		}
+	}
+
+}
+
+
+
+
+
